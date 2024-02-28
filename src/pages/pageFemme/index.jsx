@@ -8,12 +8,12 @@ import Card from "../../components/Card";
 import Data from "../../service/data.json";
 
 // COMPONENT
-import { TOTO } from "../../service/selectors/baskets_selector";
+import { sneakers } from "../../service/selectors/baskets_selector";
 // Actions
 import * as ACTION from "../../redux/reducers/articles";
 
 const Femme = () => {
-  const baskets = useSelector((state) => TOTO(state));
+  const baskets = useSelector((state) => sneakers(state));
   const dispatch = useDispatch();
 
   useEffect(() => {
